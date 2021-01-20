@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "pokepoliapi"
+  "defaultProject": "pokepoliapi",
+  "cli": {
+    "analytics": "11c72654-afa9-4109-867a-56556fb417c5"
+  }
 }
