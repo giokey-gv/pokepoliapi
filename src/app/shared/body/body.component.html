@@ -1,7 +1,38 @@
-<h1>PAGINA POKEPOLIAPI</h1>
+<div> class="container">
+<br>
+<br>
 
-<img src="assets/images/polilogo.png" alt="">
+
+    <img src="assets/images/polilogo.png" alt="">
+
+
+<div class="buscador">
+    <mat-label>Busca Tu Pokemon</mat-label>
+    <input matInput (keyup)="applyFilter($event)" #input>
+
+</div>
+
+
+
+
+<h1>PAGINA Prueba OKEPOLIAPI</h1>
+
+
   
-<h1>Pagina Prueba Giovanni</h1>  
+<h1>ACA VA LA TABLA GENERAL DE LOS POKEMONES Giovanni</h1>  
 
 <div class="principalDiv">
+
+    <img src="assets/images/fondo.png" width="500" alt="">
+
+    <table mat-table [dataSource]="datasource">
+
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matCellDef> position</th>
+            <th mat-cell *matCellDef="let element"> {{element.position}}</th>
+
+        </ng-container>
+
+
+
+    </table>
