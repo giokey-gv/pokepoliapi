@@ -60,9 +60,9 @@ export class BodyComponent implements OnInit {
   }
 
 
-  getRow(row: { position: any; }){
+  getRow(row){
     //console.log(row);
-    this.router.navigateByUrl(`/pokeDetail/${row.position}`)
+    this.router.navigateByUrl(`/card/${row.position}`)
   }
 
 }

@@ -12,7 +12,7 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   //Con esto se Obtiene el Pokemon
-  getPokemons(index: number){
+  getPokemons(index){
     return this.http.get<any>('${this.baseUrl}/pokemon/${index}');
   }
   
