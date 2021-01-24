@@ -1,56 +1,5 @@
-.btn {
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-	background-color:#63b8ee;
-	border-radius:20px;
-	border:1px solid #3866a3;
-	display:inline-block;
-	cursor:pointer;
-	color:#14396a;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #7cacde;
-  margin: 10px;
-}
-.btn:hover {
-	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
-	background-color:#468ccf;
-}
-.btn:active {
-	position:relative;
-	top:1px;
-}
-.principalDiv
-{
-  border: 10px solid #1C6EA4;
-	border-radius: 15px;
-  background-color: #ffff4d;
-  text-align: center;
-  overflow: hidden;
-  width: 97%;
-	margin: auto;
-}
-.Buscador {
-	font-size: 20;
-	float: right;
-  background-size: 24px;
-  width: 500px;
-  border: 10px solid #1C6EA4;
-  border-radius: 40px;
-  padding: 10px 10px 10px 30px;
-  outline: none;
-  margin: 50px;
-}
-.logodiv{
-	float: left;
-}
-.buscadordiv{
-	float: right;
-}
+/* You can add global styles to this file, and also import other style files */
 
+html, body { height: 70%; }
+body { margin: 0; font-family: Lobster, "Impallari Tipe, Cyreal" ; background-color: #f1efef;}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
