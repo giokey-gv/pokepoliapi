@@ -46,3 +46,13 @@
     </table>
 
     <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+<br>
+<div class="col-md-9">
+    <div class="row">
+      <div class="col-md-2 text-center" *ngFor="let pokemon of data">
+        <img src="{{ pokemon?.image }}" alt="">
+        <h4>{{pokemon.name}}</h4>
+        <button type="button" class="btn btn-primary">Mas Informacion</button>
+      </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokemonService } from './services/pokemon.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pokepoliapi';
+  data: any[] = [];
+  pokemonData: any;
+  pokemons = [];
 }

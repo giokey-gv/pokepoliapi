@@ -42,7 +42,7 @@ table {
     cursor: pointer;
     box-shadow: inset 0 0 0 5px $yellow;
 }
-/* ITEM POR PAGINA*/
+/* ITEM POR PAGINA */
 ::ng-deep.mat-paginator {
     width: 50%;
     margin: auto;

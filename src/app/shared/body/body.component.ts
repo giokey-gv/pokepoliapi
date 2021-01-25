@@ -17,7 +17,8 @@ export class BodyComponent implements OnInit {
   dataSource = new MatTableDataSource<any>(this.data);
 
 
-  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+  @ViewChild(MatPaginator, { static: true })
+  paginator!: MatPaginator;
 
   pokemons = [];
 
@@ -60,8 +61,8 @@ export class BodyComponent implements OnInit {
   }
 
 
-  getRow(row){
-    //console.log(row);
+  getRow(row: { position: any; }){
+    console.log(row);
     this.router.navigateByUrl(`/card/${row.position}`)
   }
 
