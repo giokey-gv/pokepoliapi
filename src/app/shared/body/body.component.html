@@ -1,15 +1,21 @@
-<div class="container">
-    <br>
-    <br>
 <!-- LOGO-->
-<img src="assets/images/polilogo.png" alt="">
+<br>
+<br>
+<br>
+<img class="img"
+     src="assets/images/polilogo.png" 
+        alt=""
+        height="150">
+
 
 <!-- BARRA BUSCADOR-->
 <mat-form-field>
-        
-    <mat-label>Busca tu Pokemon</mat-label>        
+        <mat-label>Busca tu Pokemon</mat-label>        
         <input matInput (keyup)="applyFilter($event)" #input>
 </mat-form-field>
+
+<h1>LA MEJOR BIBLIOTECA DE POKEMONES</h1>
+<hr>
 
 <!--TABLA GENERAL-->
   <div class="principalDiv">
