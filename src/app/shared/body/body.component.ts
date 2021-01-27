@@ -15,12 +15,12 @@ export class BodyComponent implements OnInit {
   displayedColumns: string[] = ['position', 'image', 'name'];
   data: any[] = [];
   dataSource = new MatTableDataSource<any>(this.data);
-
+  pokemons = [];
 
   @ViewChild(MatPaginator, { static: true })
   paginator!: MatPaginator;
 
-  pokemons = [];
+  
 
   constructor(private pokemonService: PokemonService, private router: Router) { }
 
@@ -31,7 +31,7 @@ export class BodyComponent implements OnInit {
   getPokemons() {
     let pokemonData;
 
-    for (let i = 1; i <= 300; i++) {
+    for (let i = 1; i <= 150; i++) {
       this.pokemonService.getPokemons(i).subscribe(
         res => {
           pokemonData = {

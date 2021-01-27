@@ -1,9 +1,9 @@
 mg:hover{
     cursor: pointer;
 }
-.toolbar {
+.mat-toolbar {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
     right: 0;
     height: 60px;
@@ -12,4 +12,8 @@ mg:hover{
     background-color: #1976d2;
     color: white;
     font-weight: 600;
+  }
+
+  img:hover{
+      cursor: pointer;
   }

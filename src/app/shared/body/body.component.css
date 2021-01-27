@@ -6,12 +6,13 @@
     text-align: center;
 }
 
-/*UBICACION DE LA TABLA*/
+/*UBICACION DE LA TABLA*/ 
 table {
     min-width: 70%;
     margin: auto;
     text-align: center;
 }
+
 /* TITULO DE LA TABLA*/
 .mat-header-cell {
     color: rgb(19, 4, 150);
@@ -24,23 +25,25 @@ table {
 .mat-row:nth-child(even) {
     background-color: white;
     & .mat-cell {
-        color: #1C6EA4;
+        color: $blue;
     }
 }
 .mat-row:nth-child(odd) {
-    background-color: #1C6EA4;
+    background-color: blue;
     & .mat-cell {
         color: white;
     }
 }
 
+/* PRIMERA LETRA EN MAYUSCULA*/
 .mat-cell:first-letter {
     text-transform: uppercase;
 }
-/*AL SELECCIONAR UNA BARRA*/
+
+/*AL PASAR SOBRE UNA BARRA*/
 .mat-row:hover {
     cursor: pointer;
-    box-shadow: inset 0 0 0 5px $yellow;
+    box-shadow: inset 0 0 0 5px yellow;
 }
 /* ITEM POR PAGINA */
 ::ng-deep.mat-paginator {
@@ -61,16 +64,25 @@ table {
     
 }
 
+/* PAGINADOR */
+::ng-deep.mat-paginator{
+    width: 70%;
+    margin:auto; 
+}
+
+/* BUSCADOR */
 ::ng-deep.mat-form-field-label {
     color: black !important;
 }
 ::ng-deep.mat-form-field-underline {
     background-color: black !important;
 }
-
 input {
     color: black !important;
 }
+
+
+
 /* Este es en Azules y Amarillos*/
 
 .buscadordiv{
