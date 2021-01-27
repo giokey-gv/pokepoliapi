@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variables.scss"
+
 mg:hover{
     cursor: pointer;
 }
@@ -9,8 +11,8 @@ mg:hover{
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
-    color: white;
+    background-color: $blue;
+    color: $white;
     font-weight: 600;
   }
 

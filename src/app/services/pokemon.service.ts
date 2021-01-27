@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PokemonService {
 
-  baseUrl: string = environment.baseUrl;
+  baseUrl = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 
