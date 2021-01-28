@@ -47,9 +47,9 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="getRow(row)"></tr>
 
-        <!-- Row shown when there is no matching data. -->
+<!-- Mensaje para cuando no encuentra ninguna coincidencia -->
         <tr class="mat-row" *matNoDataRow>
-            <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+            <td class="mat-cell" colspan="4">no encontramos un pokemon con el nombre "{{input.value}}"</td>
         </tr>
 
     </table>

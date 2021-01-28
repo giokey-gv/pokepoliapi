@@ -3,20 +3,19 @@
   
 
     <mat-card-header>
-      <img mat-card-avatar class="header-image" src="{{pokemonImg}}">
+      <img mat-card-avatar class="header-image">
       <mat-card-title>{{pokemon.name}}</mat-card-title>
       <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
     </mat-card-header>
   
-    <img mat-card-image src="{{pokemonImg}}" alt="pokemon">
+    <img mat-card-image src="{{pokemonimg}}" alt="pokemon">
   
     <mat-card-content>
       <mat-chip-list>
-        <mat-chip color="primary">Tipo: {{pokemonType}}</mat-chip>
-        <mat-chip color="primary">Altura: {{pokemon.height}}</mat-chip>
-        <mat-chip color="primary">Peso: {{pokemon.weight}}</mat-chip>
+        <mat-chip color="primary">Tipo: {{pokemontype}}</mat-chip>
+        <mat-chip color="primary">Altura: {{pokemon.height}} Centimetros</mat-chip>
+        <mat-chip color="primary">Peso: {{pokemon.weight}} Gramos</mat-chip>
         <mat-chip color="primary">Nivel Experiencia: {{pokemon.base_experience}}</mat-chip>
-        <mat-chip color="primary">Tipo: {{pokemon.game_index}}</mat-chip>
         <mat-chip color="primary">Otro: {{pokemon.movename}}</mat-chip>
       
       </mat-chip-list>
