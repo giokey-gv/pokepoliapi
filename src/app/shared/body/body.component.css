@@ -29,7 +29,7 @@ table {
     }
 }
 .mat-row:nth-child(odd) {
-    background-color: blue;
+    background-color: #1C6EA4;
     & .mat-cell {
         color: white;
     }
@@ -43,7 +43,7 @@ table {
 /*AL PASAR SOBRE UNA BARRA*/
 .mat-row:hover {
     cursor: pointer;
-    box-shadow: inset 0 0 0 5px black;
+    box-shadow: inset 0 0 0 5px #ffff4d;
 }
 /* ITEM POR PAGINA */
 ::ng-deep.mat-paginator {
