@@ -22,7 +22,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  getPokemon(id){
+  getPokemon(id: number){
     this.PokemonService.getPokemons(id).subscribe(
       res =>{
         this.pokemon = res

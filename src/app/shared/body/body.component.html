@@ -58,14 +58,15 @@
 <br>
 
 <!-- esta es la segunda forma en que esta mostrando los pokemon -->
-<div class="col-md-9">
+
+
+<div class="container">
     <div class="row">
-      <div class="col-md-2 text-center" *ngFor="let pokemon of data">
-          <button>
-            <button type="button" class="btn btn-primary">Mas Informacion</button>
-            <img src="{{ pokemon?.image }}" alt="">
-            <h4>{{pokemon.name}}</h4>
-          </button>
-        </div>
+      <div class="col-xs-2 text-center" *ngFor="let pokemon of data">
+        <button type="button" class="btn btn-primary">
+            <h4>{{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
+                <h2>{{pokemon.name}}</h2>
+        </button>
+      </div>
     </div>
 </div>
