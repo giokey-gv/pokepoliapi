@@ -1,22 +1,44 @@
+<link rel="stylesheet" href="card.component.css">
 <mat-card class="card">
-
+<div>
   <mat-card-header>
-      <img mat-card-avatar class="header-image">
+      <img mat-card-avatar class="header-image" src="{{pokemonimg}}">
       <mat-card-title>{{pokemon.name}}</mat-card-title>
       <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
   </mat-card-header>
-  
-    <img mat-card-image src="{{pokemonimg}}" alt="">
-  
+  <div>
+    <div class="grid">
+    <tr>
+      <td>
+        <img class="image" src="{{pokemonart}}">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>
+        <img class="image2"src="{{pokemonimg}}">
+      </td>
+      <td>
+        <br>
+        <img class="image2"src="{{pokemonback}}">
+      </td>
+    </tr>
+    </div>
+  </div>
     <mat-card-content>
-      <mat-chip-list>
+      <mat-chip-list class="grid-chip">
         <mat-chip color="primary">Tipo: {{pokemontype}}</mat-chip>
-        <mat-chip color="primary">Altura: {{pokemon.height}} Centimetros</mat-chip>
-        <mat-chip color="primary">Peso: {{pokemon.weight}} Gramos</mat-chip>
+        <mat-chip color="primary">Altura: {{pokemon.height}} pies</mat-chip>
+        <mat-chip color="primary">Peso: {{pokemon.weight}}</mat-chip>
         <mat-chip color="primary">Nivel Experiencia: {{pokemon.base_experience}}</mat-chip>
         <mat-chip color="primary">Otro: {{pokemon.movename}}</mat-chip>
-      
+        <mat-chip color="primary">HP: {{pokemonstats1}}</mat-chip>
+        <mat-chip color="primary">Atack: {{pokemonstats2}}</mat-chip>
+        <mat-chip color="primary">Defense: {{pokemonstats3}}</mat-chip>
+        <mat-chip color="primary">SpecialAtack: {{pokemonstats4}}</mat-chip>
+        <mat-chip color="primary">SpecialDefense  : {{pokemonstats5}}</mat-chip>
+        <mat-chip color="primary">Speed  : {{pokemonstats6}}</mat-chip>
       </mat-chip-list>
     </mat-card-content>
-  
-  </mat-card>
+</div>
+</mat-card>

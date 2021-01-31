@@ -27,3 +27,28 @@
 .mat-card-subtitle{
     color: black;
 }
+
+div{
+    background-color: #1C6EA4;
+    width: 500px;
+    height:"200";
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+}
+.grid > td{
+    background-color: #1ca455;
+    grid-template-columns: 2fr;
+}
+
+.image{
+    alt:"";
+    margin-left: 50px;
+    widows: 80px;
+    height: 400px;
+}
+.image2{
+    height: 90px;
+}
