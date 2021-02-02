@@ -59,7 +59,7 @@ table {
   margin: 50px;
   }
 
-/* PAGINADOR */
+
 ::ng-deep.mat-paginator{
     width: 70%;
     margin:auto; 
