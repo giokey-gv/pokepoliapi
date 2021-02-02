@@ -5,36 +5,30 @@
     margin: auto;
     margin-top: 70px;
     background-color: #1C6EA4;
-    border: 10px solid #ffff4d;
-    border-radius: 40px;
+    border: 40px solid #efc03e;
+    border-radius: 80px;
 }
-
 .header-image {
     background-size: cover;
 }
-
 .mat-card-header {
-    background-color: white;
+    background-color: #efc03e;
     padding-top: 10px;
     border-radius: 10px;
 }
-
 .mat-card-title{
     text-transform: uppercase;
     color: black;
 }
-
 .mat-card-subtitle{
     color: black;
 }
-
 div{
     background-color: #1C6EA4;
     width: 500px;
     height:"200";
     margin: auto;
 }
-
 .grid{
     display: grid;
 }
@@ -42,12 +36,11 @@ div{
     background-color: #1ca455;
     grid-template-columns: 2fr;
 }
-
 .image{
     alt:"";
     margin-left: 50px;
     widows: 80px;
-    height: 400px;
+    height: 300px;
 }
 .image2{
     height: 90px;
