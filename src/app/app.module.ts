@@ -12,6 +12,7 @@ import { CardComponent } from './shared/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ItemComponent } from './pages/item/item.component';
 
 
 
@@ -22,7 +23,8 @@ import { AboutComponent } from './pages/about/about.component';
     BodyComponent,
     CardComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
