@@ -41,12 +41,12 @@ table {
     cursor: pointer;
     box-shadow: inset 0 0 0 5px #efc03e;
 }
-/* ITEM POR PAGINA */
+
 ::ng-deep.mat-paginator {
     width: 50%;
     margin: auto;
 }
-/* CELDA DE BUSQUEDA*/
+
 .mat-form-field {
     font-size: 20;
     float: right;
