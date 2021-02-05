@@ -1,0 +1,31 @@
+p {
+    font-family: fantasy;
+    font-weight: 900;
+    text-align: center;
+  }
+
+h3 {
+  font-family: fantasy;
+  
+}
+h2 {
+  font-family: "Homer Simpson UI";
+  font-size: 200%;
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+table {
+  min-width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.mat-cell:first-letter {
+  text-transform: uppercase;
+}

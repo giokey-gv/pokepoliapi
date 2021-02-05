@@ -31,7 +31,7 @@ export class BodyComponent implements OnInit {
   getPokemons() {
     let pokemonData;
 
-    for (let i = 1; i <= 150; i++) {
+    for (let i = 1; i <= 300; i++) {
       this.pokemonService.getPokemons(i).subscribe(
         res => {
           pokemonData = {
