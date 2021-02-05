@@ -1,1 +1,17 @@
-<p>item works!</p>
+
+<br>
+<br>
+<hr>
+<H1>TODOS LOS POKEMONES</H1>
+<hr>
+<!-- esta es la segunda forma en que esta mostrando los pokemon -->
+<div class="container">
+    <div class="row">
+      <div class="col-xs-2 text-center" *ngFor="let pokemon of data">
+        <button type="button" class="btn btn-primary">
+            <h4>N.{{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
+                <h2>{{pokemon.name}}</h2>
+        </button>
+      </div>
+    </div>
+</div>
