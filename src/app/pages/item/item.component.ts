@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
+  data: any;
+  dataSource: MatTableDataSource<any> | undefined;
 
   constructor(private pokemonService: PokemonService, private router: Router) { }
 
