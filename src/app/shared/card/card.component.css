@@ -30,7 +30,8 @@ div{
     margin: auto;
 }
 .grid{
-    display: grid;
+    display: block;
+    margin: auto;
 }
 .grid > td{
     background-color: #1ca455;
@@ -38,10 +39,13 @@ div{
 }
 .image{
     alt:"";
-    margin-left: 50px;
+    display: block;
+    margin: auto;
     widows: 80px;
     height: 300px;
 }
 .image2{
-    height: 90px;
+    height: 120px;
+    display: block;
+    margin: auto;
 }
