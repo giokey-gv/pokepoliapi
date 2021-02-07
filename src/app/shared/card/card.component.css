@@ -27,6 +27,10 @@
     color: black;
     padding-top: 3px;
 }
+.mat-card-content{
+    padding-left: 15px;
+    box-shadow:inset 0px 2px 0px 0px #efc03e;
+}
 div{
     background-color: #1C6EA4;
     width: 450px;
@@ -37,6 +41,7 @@ div{
 .grid{
     display: block;
     margin: auto;
+    padding-right: 10px;
 }
 .grid > td{
     background-color: #1ca455;

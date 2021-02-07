@@ -7,6 +7,7 @@ import { Route, ActivatedRoute } from '@angular/router';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
+
 export class CardComponent implements OnInit {
   pokemon:any = '';
   pokemontype = [];
