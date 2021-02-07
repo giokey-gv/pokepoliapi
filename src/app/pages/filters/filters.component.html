@@ -1,0 +1,49 @@
+<br>
+<br>
+<br>
+<br>
+<img class="img" src="assets/images/polilogo.png" alt="" height="150">
+
+<mat-form-field>
+        <mat-label>Busca tu Pokemon</mat-label>        
+        <input matInput (keyup)="applyFilter($event)" #input>
+</mat-form-field>
+
+<div class="principalDiv">
+
+<table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> Posición </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef> Imagen </th>
+        <td mat-cell *matCellDef="let element">
+            <img src="{{element.image}}" alt="pokemon" width="100" height="100">
+        </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+<!--NOMBRE DE LA COLUMNA-->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="getRow(row)"></tr>
+
+<!-- Mensaje para cuando no encuentra ninguna coincidencia -->
+    <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">no encontramos un pokemon con el nombre "{{input.value}}"</td>
+    </tr>
+
+</table>
+<mat-paginator [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>
+<br>
+<br>
+
+<p class="rk-footer__text rk-footer__by">
+    Hecho con amor y desarrollado con <a href="https://angular.io/" class="ae-u-bolder">Angular.</a>
+</p>

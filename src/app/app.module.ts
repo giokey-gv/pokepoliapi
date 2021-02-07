@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { HomeComponent } from './shared/home/home.component';
+import { FiltersComponent } from './pages/filters/filters.component';
 
 
 
@@ -24,7 +26,9 @@ import { ItemComponent } from './pages/item/item.component';
     CardComponent,
     FooterComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    HomeComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,

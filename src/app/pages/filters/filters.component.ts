@@ -1,21 +1,26 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { PokemonService } from 'src/app/services/pokemon.service';
-
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'item-body',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss']
+  selector: 'app-filters',
+  templateUrl: './filters.component.html',
+  styleUrls: ['./filters.component.scss']
 })
-export class ItemComponent implements OnInit {
+export class FiltersComponent implements OnInit {
 
- 
+  displayedColumns: string[] = ['position', 'image', 'name'];
   data: any[] = [];
   dataSource = new MatTableDataSource<any>(this.data);
   pokemons = [];
+
+  @ViewChild(MatPaginator, { static: true })
+  paginator!: MatPaginator;
+
+  
 
   constructor(private pokemonService: PokemonService, private router: Router) { }
 
@@ -37,7 +42,8 @@ export class ItemComponent implements OnInit {
 
           this.data.push(pokemonData);
           this.dataSource = new MatTableDataSource<any>(this.data);
-                },
+          this.dataSource.paginator = this.paginator;
+        },
         err => {
           console.log(err);
         }

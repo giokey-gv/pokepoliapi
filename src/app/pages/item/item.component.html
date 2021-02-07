@@ -1,24 +1,20 @@
-
 <br>
 <br>
-<hr>
-<H1>TODOS LOS POKEMONES EN UNA SOLA PAGINA LLAMADA ITEM</H1>
-<hr>
-
+<br>
+<br>
 <div class="principalDiv">
 
-<div class="container">
-    <div class="row">
-      <div class="col-xs-2 text-center" *ngFor="let pokemon of data">
-        <button type="button" class="btn btn-primary">
-            <h4>N.{{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
-                <h2>{{pokemon.name}}</h2>
-        </button>
-      </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-2 text-center" *ngFor="let pokemon of data">
+            <button type="button" class="btn btn-primary">
+                <h4>N.{{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
+                    <h2>{{pokemon.name}}</h2>
+            </button>
+          </div>
+        </div>
     </div>
-</div>
-
-
-<p class="rk-footer__text rk-footer__by">
-  Hecho con amor y desarrollado con <a href="https://angular.io/" class="ae-u-bolder">Angular.</a>
-</p>
+    
+    <p class="rk-footer__text rk-footer__by">
+      Hecho con amor y desarrollado con <a href="https://angular.io/" class="ae-u-bolder">Angular.</a>
+    </p>
