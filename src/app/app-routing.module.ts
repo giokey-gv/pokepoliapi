@@ -4,6 +4,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { BodyComponent } from './shared/body/body.component';
 import { CardComponent } from './shared/card/card.component';
+import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'card/:id', component: CardComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item', component: ItemComponent },
+  {path: 'acerca_de', component: AcercaDeComponent},
   {path: '', pathMatch: 'full', redirectTo: 'home' },
   {path: '**', pathMatch: 'full', redirectTo: 'home'},
 ];

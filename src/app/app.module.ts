@@ -15,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { HomeComponent } from './shared/home/home.component';
 import { FiltersComponent } from './pages/filters/filters.component';
+import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 
 
 
@@ -28,7 +29,8 @@ import { FiltersComponent } from './pages/filters/filters.component';
     AboutComponent,
     ItemComponent,
     HomeComponent,
-    FiltersComponent
+    FiltersComponent,
+    AcercaDeComponent
   ],
   imports: [
     BrowserModule,
