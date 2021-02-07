@@ -7,14 +7,16 @@
     <div class="container">
         <div class="row">
           <div class="col-xs-2 text-center" *ngFor="let pokemon of data">
-            <button type="button" class="btn btn-primary">
-                <h4>N.{{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
-                    <h2>{{pokemon.name}}</h2>
+            <button type="botton" class="btn btn-primary">
+                <h4>N°  {{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
+                <p>
+                <button type="botton" class="btn-btn-sec"><h4>{{pokemon.name}}</h4></button>
+                
             </button>
           </div>
         </div>
     </div>
     
     <p class="rk-footer__text rk-footer__by">
-      Hecho con amor y desarrollado con <a href="https://angular.io/" class="ae-u-bolder">Angular.</a>
+      Hecho con amor y desarrollado con <a href="https://angular.io/" class="ae-u-bolder" target="_blank">Angular.</a>
     </p>
