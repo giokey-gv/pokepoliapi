@@ -6,8 +6,9 @@
 <div>
   <mat-card-header>
       <img mat-card-avatar class="header-image" src="{{pokemonart}}">
-      <mat-card-title>{{pokemon.name}}</mat-card-title>
-      <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
+      <mat-card-title>Nº{{pokemon.id}} / {{pokemon.name}}</mat-card-title>
+      <mat-card-subtitle>Tipo: {{pokemontype}}</mat-card-subtitle>
+      
   </mat-card-header>
   <div>
     <div class="grid">
@@ -30,7 +31,6 @@
   </div>
     <mat-card-content>
       <mat-chip-list class="grid-chip">
-        <mat-chip color="primary">Tipo: {{pokemontype}}</mat-chip>
         <mat-chip color="primary">Altura: {{pokemon.height}} pies</mat-chip>
         <mat-chip color="primary">Peso: {{pokemon.weight}}</mat-chip>
         <mat-chip color="primary">Nivel Experiencia: {{pokemon.base_experience}}</mat-chip>
