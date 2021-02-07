@@ -20,3 +20,43 @@ p{
     color: indigo;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.footer-copy-redes{
+	width: 100%;
+	background:#1C6EA4;
+	border-top: 3px solid #fff;
+}
+
+.main-copy-redes{
+	width: 98%;
+	max-width: 1000px;
+	padding: 15px 0;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-copy-redes .footer-copy{
+	width: 70%;
+	color: #fff;
+}
+
+.main-copy-redes .footer-redes{
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-copy-redes .footer-redes a{
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+    border-radius: 65%;
+	background: #fff;
+	color: #000;
+	text-align: center;
+}
