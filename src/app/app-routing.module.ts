@@ -6,7 +6,7 @@ import { BodyComponent } from './shared/body/body.component';
 import { CardComponent } from './shared/card/card.component';
 import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 import { ApplicationAndResourceComponent } from './pages/application-and-resource/application-and-resource.component';
-
+import { BuscarPokemonComponent } from './pages/buscar-pokemon/buscar-pokemon.component';
 
 const routes: Routes = [
   {path: 'home', component: BodyComponent},
@@ -15,8 +15,9 @@ const routes: Routes = [
   {path: 'item', component: ItemComponent },
   {path: 'acerca_de', component: AcercaDeComponent},
   {path: 'aplicacionesyrecursos', component: ApplicationAndResourceComponent},
+  {path: 'searchpokemon', component: BuscarPokemonComponent},
   {path: '', pathMatch: 'full', redirectTo: 'home' },
-  {path: '**', pathMatch: 'full', redirectTo: 'home'},
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({

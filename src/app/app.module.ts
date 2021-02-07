@@ -17,6 +17,7 @@ import { HomeComponent } from './shared/home/home.component';
 import { FiltersComponent } from './pages/filters/filters.component';
 import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 import { ApplicationAndResourceComponent } from './pages/application-and-resource/application-and-resource.component';
+import { BuscarPokemonComponent } from './pages/buscar-pokemon/buscar-pokemon.component';
 
 
 
@@ -32,7 +33,8 @@ import { ApplicationAndResourceComponent } from './pages/application-and-resourc
     HomeComponent,
     FiltersComponent,
     AcercaDeComponent,
-    ApplicationAndResourceComponent
+    ApplicationAndResourceComponent,
+    BuscarPokemonComponent
   ],
   imports: [
     BrowserModule,
