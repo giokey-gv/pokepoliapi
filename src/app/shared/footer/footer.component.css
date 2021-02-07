@@ -1,4 +1,4 @@
-footer{
+/* footer{
     display: flex;
     flex: 0;
     justify-content: center;
@@ -19,7 +19,11 @@ p{
     text-align: center;
     color: indigo;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} */
+
+img{
+    width: 40px;
+} 
 .footer-copy-redes{
 	width: 100%;
 	background:#1C6EA4;
@@ -40,6 +44,8 @@ p{
 .main-copy-redes .footer-copy{
 	width: 70%;
 	color: #fff;
+    font-size: 15px;
+    font-family: raleway;
 }
 
 .main-copy-redes .footer-redes{
@@ -59,4 +65,39 @@ p{
 	background: #fff;
 	color: #000;
 	text-align: center;
+}
+
+footer{
+	width: 100%;
+	font-family: fantasy;
+}
+
+.footer-containter{
+	width: 100%;
+	background: #103349;
+	color: #fff;
+}
+
+.footer-main{
+	width: 98%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-main .footer-columna {
+	width: calc(100% / 3);
+	text-align: center;
+}
+
+.footer-main .footer-columna: nth-child(2) {
+	padding: 0 20px;
+}
+
+.footer-main .footer-columna h3 {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 20px;
 }
