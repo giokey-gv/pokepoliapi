@@ -6,6 +6,7 @@
 
     <div class="container">
         <div class="row">
+          <tr mat-row (click)="getRow(row)"></tr>
           <div class="col-xs-2 text-center" *ngFor="let pokemon of data">
             <button type="botton" class="btn btn-primary">
                 <h4>Nº {{pokemon.position}}</h4><img src="{{pokemon?.image}}" alt=""> 
