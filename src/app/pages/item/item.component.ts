@@ -60,4 +60,5 @@ export class ItemComponent implements OnInit {
     this.router.navigateByUrl(`/card/${row.position}`)
   }
 
+  
 }
