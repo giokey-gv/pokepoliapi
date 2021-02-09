@@ -12,8 +12,9 @@ mg:hover{
     display: flex;
     align-items: center;
     background-color: #1C6EA4;
-    color: white;
+    color:white;
     font-weight: 600;
+    
   }
 
   img:hover{

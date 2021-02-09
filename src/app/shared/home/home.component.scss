@@ -1,17 +1,27 @@
+@font-face {
+  font-family: Pokemon;
+  src: url(/assets/fonts/Pokemon2.ttf) format("opentype");
+}
+@font-face {
+  font-family: Coffee;
+  src: url(/assets/fonts/Coffee.ttf) format("opentype");
+}
 h1 {
-    font-family: garamond;
-    font-size: 700%;
+    font-family: "Pokemon";
+    font-size: 500%;
     text-align: center;
-  }
-h2 {
-    font-family: "Yusei Magic";
+    color:rgb(207, 29, 29);
+    text-shadow:1px 4px 1px #80aad8;
+      }
+h3 {
+    font-family: "Coffee";
     font-size: 200%;
     font-weight: 900;
     text-align: center;
   }
 img {
-    float: center;
-      }
+        float: center;
+    }
 
       .btn {
         box-shadow:inset 0px 2px 0px 0px #bee2f9;
@@ -23,11 +33,29 @@ img {
         cursor:pointer;
         color:#14396a;
         font-family:Arial;
-        font-size:10px;
+        font-size:30px;
         font-weight:bold;
         padding:6px 24px;
         text-decoration:none;
         text-shadow:0px 1px 0px #7cacde;
-      margin: 20px;
+        margin: 20px;
+        
     }
-    
+.bievenida {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+
+.img-home {
+  background: white;
+  text-align: center;
+  padding: auto;
+  transition:all .5s ease-in-out;
+}
+p{
+  font-family: "Coffee";
+  color: #14396a ;
+}
+.section{
+  padding-top: 10px;
+}
