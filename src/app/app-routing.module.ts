@@ -9,7 +9,7 @@ import { ApplicationAndResourceComponent } from './pages/application-and-resourc
 import { BuscarPokemonComponent } from './pages/buscar-pokemon/buscar-pokemon.component';
 
 const routes: Routes = [
-  {path: 'home', component: BodyComponent},
+  {path: 'body', component: BodyComponent},
   {path: 'card/:id', component: CardComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item', component: ItemComponent },
