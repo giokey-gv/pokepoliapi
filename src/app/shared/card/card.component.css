@@ -50,7 +50,7 @@ div{
 .image{
     alt:"";
     display: block;
-    margin: auto;
+    margin: 30px;
     widows: 80px;
     height: 300px;
 }
