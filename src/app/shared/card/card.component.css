@@ -50,7 +50,7 @@ div{
 .image{
     alt:"";
     display: block;
-    margin: auto;
+    margin: 30px;
     widows: 80px;
     height: 300px;
 }
@@ -59,3 +59,12 @@ div{
     display: block;
     margin: auto;
 }
+
+.watermark {
+    opacity: 0.5;
+    color: BLACK;
+    position: fixed;
+    top: auto;
+    right: 0;
+    left: 0;
+    }
